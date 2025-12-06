@@ -99,7 +99,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <ProfileImage
-              src="/profile-photo.jpeg"
+              src={`${process.env.PUBLIC_URL}/profile-photo.jpeg`}
               alt="Jyoshika Reddy"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
