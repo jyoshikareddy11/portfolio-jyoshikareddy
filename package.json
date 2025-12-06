@@ -2,7 +2,7 @@
   "name": "jyoshika-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://jyoshikareddy11.github.io/portfolio-jyoshikareddy",
+  "homepage": "/portfolio-jyoshikareddy",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "cors": "^2.8.5",
