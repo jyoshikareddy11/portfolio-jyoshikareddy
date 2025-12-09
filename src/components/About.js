@@ -57,9 +57,19 @@ const ProfileImage = styled(motion.img)`
   height: 400px;
   border-radius: 20px;
   object-fit: cover;
+  object-position: center;
   border: 3px solid rgba(102, 126, 234, 0.3);
   box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
   display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: auto;
+  filter: contrast(1.1) brightness(1.05) saturate(1.1);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   
   @media (max-width: 768px) {
     max-width: 250px;
@@ -105,6 +115,8 @@ const About = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
+              loading="eager"
+              decoding="async"
             />
           </ProfileImageContainer>
           <AboutText
